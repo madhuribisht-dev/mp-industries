@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – M.P. Industries</title>
+  <meta name="description" content="Contact M.P. Industries for packaging enquiries. Call 9927540667 or email mpindustries1523@gmail.com."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="logo-api">MPI</span>
+        <span class="logo-name">M.P. Industries</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--sm nav__cta">Get a Quote</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section__eyebrow">Reach Out</p>
+      <h1 class="page-hero__title">Contact Us</h1>
+      <p class="page-hero__sub">We respond to enquiries within 24 hours. Let's talk packaging.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <h2 class="contact-form__title">Send an Enquiry</h2>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="Ravi Kumar" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Firm</label>
+              <input type="text" id="company" name="company" placeholder="Your Business Name" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="product">Product Interested In</label>
+            <select id="product" name="product">
+              <option value="">Select a product category</option>
+              <option>LLDPE Shrink Film</option>
+              <option>HDPE Film Roll</option>
+              <option>LD Shrink Film</option>
+              <option>Stretch / Pallet Wrap</option>
+              <option>LDPE Plain Bags</option>
+              <option>Printed Poly Bags</option>
+              <option>HDPE Liner Bags</option>
+              <option>BOPP Tape – Clear</option>
+              <option>BOPP Tape – Printed</option>
+              <option>Custom Printing & Packing</option>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Requirement *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Please describe your requirement — product, quantity, size, gauge etc." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Enquiry</button>
+          <p class="form-note">* Required fields. We never share your data.</p>
+        </form>
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <div class="success-box">
+            <p class="success-icon">✅</p>
+            <h3>Enquiry Sent!</h3>
+            <p>Thank you. We'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info">
+        <div class="contact-card">
+          <h3>📍 Factory Address</h3>
+          <p>Khasra No. 392, Village-Devariya<br/>Tehsil Kichha<br/>Distt. Udham Singh Nagar<br/>Uttarakhand – 263148</p>
+        </div>
+        <div class="contact-card">
+          <h3>📞 Call Us</h3>
+          <p><a href="tel:9927540667">9927540667</a></p>
+          <p><a href="tel:8958530003">8958530003</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>✉️ Email</h3>
+          <p><a href="mailto:mpindustries1523@gmail.com">mpindustries1523@gmail.com</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>🏛️ GST Details</h3>
+          <p>GSTIN: 05ABRFM2756K1ZR</p>
+          <p>Legal status: Proprietorship / Partnership</p>
+        </div>
+        <div class="contact-card map-embed">
+          <h3>📌 Find Us</h3>
+          <iframe
+            src="https://maps.google.com/maps?q=Kichha+Udham+Singh+Nagar+Uttarakhand&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="200"
+            style="border:0;border-radius:8px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="logo-api footer-logo">MPI</span>
+        <span class="logo-name">M.P. Industries</span>
+        <p class="footer__tagline">Quality Assured Packaging Solutions</p>
+        <p class="footer__address">Khasra No. 392, Village-Devariya<br/>Tehsil Kichha, Distt. Udham Singh Nagar<br/>Uttarakhand – 263148</p>
+      </div>
+      <div class="footer__col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html#films">Shrink Films</a></li>
+          <li><a href="products.html#bags">Liners & Bags</a></li>
+          <li><a href="products.html#tape">BOPP Tape</a></li>
+          <li><a href="products.html#print">Print & Pack</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:9927540667">9927540667</a></p>
+        <p>📞 <a href="tel:8958530003">8958530003</a></p>
+        <p>✉️ <a href="mailto:mpindustries1523@gmail.com">mpindustries1523@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 M.P. Industries. All rights reserved. | GSTIN: 05ABRFM2756K1ZR</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
